@@ -90,4 +90,106 @@
             "headline-lg-mobile": ["Plus Jakarta Sans"], 
             "label-md": ["Space Grotesk"], 
             "headline-lg": ["Plus Jakarta Sans"], 
-            "
+            "body-lg": ["Plus Jakarta Sans"], 
+            "headline-xl-mobile": ["Plus Jakarta Sans"], 
+            "label-lg": ["Space Grotesk"], 
+            "headline-md": ["Plus Jakarta Sans"], 
+            "label-sm": ["Space Grotesk"] 
+          }, 
+          fontSize: { 
+            "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.03em", fontWeight: "800" }], 
+            "body-sm": ["13px", { lineHeight: "18px", letterSpacing: "0.005em", fontWeight: "500" }], 
+            "body-md": ["15px", { lineHeight: "22px", letterSpacing: "0em", fontWeight: "400" }], 
+            "headline-lg-mobile": ["24px", { lineHeight: "30px", letterSpacing: "-0.015em", fontWeight: "700" }], 
+            "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "600" }], 
+            "headline-lg": ["32px", { lineHeight: "38px", letterSpacing: "-0.02em", fontWeight: "700" }], 
+            "body-lg": ["17px", { lineHeight: "26px", letterSpacing: "-0.005em", fontWeight: "400" }], 
+            "headline-xl-mobile": ["30px", { lineHeight: "36px", letterSpacing: "-0.025em", fontWeight: "800" }], 
+            "label-lg": ["14px", { lineHeight: "18px", letterSpacing: "0.02em", fontWeight: "600" }], 
+            "headline-md": ["20px", { lineHeight: "26px", letterSpacing: "-0.01em", fontWeight: "700" }], 
+            "label-sm": ["10px", { lineHeight: "14px", letterSpacing: "0.06em", fontWeight: "700" }] 
+          } 
+        } 
+      } 
+    }
+  </script>
+  
+  <style>
+    @layer base {
+      html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+      }
+      body {
+        overscroll-behavior-y: none;
+      }
+      .pb-safe {
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+      }
+      .pt-safe {
+        padding-top: env(safe-area-inset-top, 0px);
+      }
+      main>:first-child {
+        margin-top: 0 !important;
+      }
+      main>:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen">
+  
+  <header class="fixed top-0 left-0 right-0 z-50 pt-safe bg-surface/90 backdrop-blur-md border-b border-surface-container-high/60">
+    <div class="px-margin h-14 flex items-center justify-between">
+      <button class="flex items-center gap-1.5 text-primary active:opacity-70 transition-opacity" onclick="history.back()" type="button">
+        <span class="material-symbols-outlined text-[22px]">arrow_back_ios_new</span>
+        <span class="font-label-lg text-label-lg font-semibold">The Four Squad</span>
+      </button>
+      <div class="w-8"></div>
+    </div>
+  </header>
+
+  <main class="flex-1 flex flex-col relative w-full pt-20 bg-surface">
+    <div class="flex flex-col w-full">
+      <div class="max-w-md mx-auto w-full px-margin py-space-md flex flex-col items-center text-center">
+        
+        <!-- Profile Picture -->
+        <div class="w-32 h-32 rounded-full overflow-hidden mb-space-md">
+          <img alt="Manav" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfYS0SNsFHS3j_ReeishcZ0mtathtmCfDLUPUScQj-YYWGw66Be-LJud0AciBbquczX2j6eiy-D8NVmXqfueM8IX42cIIeb6wDl9_GxbxIr-l_E0HD2ttQro-z-1RkpR3ZdqW8rq_xDk7Y7jX55tNIN-cDejEooBbsvamf8Fz5_7UgCVcQ2H3vzZKzlitgz6RUS1F-8V_q6p6VZakXTyCth_ab1udEqO_rFzSH5AQbddVm3q2Z-VXcl_Q42620oGkBTHTDbX7m_5acay0">
+        </div>
+
+        <!-- Name & Bio -->
+        <h2 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-on-surface mb-2">Manav</h2>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-space-xl max-w-xs leading-relaxed">
+          Hi, I am Manav!&nbsp;&nbsp;I love good music, late evening conversations, and keeping things chill and peaceful.
+        </p>
+
+      </div>
+    </div>
+
+    <script>
+      function sendVibeCheck() {
+        const toast = document.getElementById('toast-notify');
+        if (toast) {
+          toast.classList.remove('hidden');
+          setTimeout(() => {
+            toast.classList.add('hidden');
+          }, 3500);
+        }
+      }
+
+      function sharePlaylistPrompt() {
+        alert("Manav says: 'Put your phone on Do Not Disturb and hit play.'");
+      }
+    </script>
+  </main>
+
+</body>
+</html>
