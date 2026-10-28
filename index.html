@@ -2,79 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Squad Hub</title>
+  <title>The Four Squad</title>
   <style>
-    body { font-family: 'Times New Roman', Times, serif; color: #000; background: #fbf8ff; margin: 0; padding: 2rem 1rem; }
-    a { text-decoration: none; color: #000; font-weight: bold; }
-    a:hover { text-decoration: underline; }
+    body { font-family: 'Times New Roman', Times, serif; color: #000; background: #fbf8ff; margin: 0; padding: 2rem; text-align: center; }
+    h1 { font-size: 2.5rem; margin-bottom: 2rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; max-width: 800px; margin: 0 auto; }
+    .card { background: #fff; border: 1px solid #ddd; border-radius: 1rem; padding: 1.5rem; text-decoration: none; color: #000; transition: transform 0.2s, box-shadow 0.2s; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .avatar { width: 100px; height: 100px; border-radius: 50%; overflow: hidden; margin: 0 auto 1rem auto; background: #ddd; }
+    .avatar img { width: 100%; height: 100%; object-fit: cover; }
+    h2 { font-size: 1.3rem; margin: 0; }
   </style>
 </head>
 <body>
-  <div style="max-width: 900px; margin: 0 auto;">
-
-    <!-- Top Navigation Bar -->
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2.5rem; font-size: 1rem;">
-      <a href="index.html">&larr; The Four Squad</a>
-      <div style="display: flex; gap: 1rem;">
-        <a href="amber.html">Amber</a>
-        <a href="manik.html">Manik</a>
-        <a href="manav.html">Manav</a>
-        <a href="amritanshu.html">Amritanshu</a>
-      </div>
-    </div>
-
-    <!-- Main Title & Bio -->
-    <h2 style="font-family: Georgia, serif; font-size: 3.5rem; font-weight: bold; line-height: 1.1; margin-bottom: 1rem;">Four Friends.<br>Endless Ideas.</h2>
-    <p style="font-size: 1.25rem; font-style: italic; color: #444; margin-bottom: 3rem;">Our collective creative space. Documenting memories, design experiments, and spontaneous adventures.</p>
-
-    <!-- Profiles List -->
-    <div style="display: flex; flex-direction: column; gap: 2.5rem;">
-      
-      <!-- Amber -->
-      <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
-        <div style="width: 120px; height: 120px; border-radius: 1rem; overflow: hidden; background: #ddd; flex-shrink: 0;">
-          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDph6rKSyWd_Vzd3HwZ_GoGpYraulg7LGWAKvoD9KqgJxh8cgEOr58HmtLFfIlA3OcEw9JpS038Cr_csufd4ECU6etNmP1iQZI4808TB5Bo2i459fY9pf0HIdcYOSKubAQ4SL35gpJaWujM8KvATtoeIJIC_H7JzOf3kVFFqmDaqyMVyx9LBnfCjQT6hDbB-5Qp3uUbpgdPCFeFtW1-RNVWG9HSpITbbHEK3Tf8LBk3kLGyAf4pVQB9_N2Ttt3xgfFarWXwssxGi84dBnA" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div>
-          <a href="amber.html" style="font-size: 2rem; font-weight: bold;">Amber Pahwa &rarr;</a>
-          <p style="font-size: 1.2rem; font-weight: 600; margin-top: 0.2rem;">Content Creator and Coder</p>
-        </div>
-      </div>
-
-      <!-- Manik -->
-      <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
-        <div style="width: 120px; height: 120px; border-radius: 1rem; overflow: hidden; background: #ddd; flex-shrink: 0;">
-          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBkjZlT7IMrWt1xad-iwjcp_yw_FG57k9CW56AqcjsNDOwEHbtv_m5i7zXFFFQgM4jfad5NCTOlENanKl-gBLtwxE9800O0nSQxpQ38pmtKhfPh5fPBPnf1gS8Gz2gOrMvl_PuAwbqGAhXYdDWGO9qRjaSoNrxsrXfrZEVJgfzSi89oIH43WkaTA4-u2BggwIF4fwBeAq0phoVQgcXSdyedqyVS4ZBf9HA5wFh0YQll3_a-UgqOdXk1tT6FGDdUmJMmD-j9opDGezFkgw" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div>
-          <a href="manik.html" style="font-size: 2rem; font-weight: bold;">Manik &rarr;</a>
-          <p style="font-size: 1.2rem; font-weight: 600; margin-top: 0.2rem;">Turning ideas into impact</p>
-        </div>
-      </div>
-
-      <!-- Manav -->
-      <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
-        <div style="width: 120px; height: 120px; border-radius: 1rem; overflow: hidden; background: #ddd; flex-shrink: 0;">
-          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSyZcRQDPl9ewWVPPTLT9vYV9NPMrtjkb_ssiaSCf74bh7B_rbzVD-xQivm3isy4MV6CVYItaT9LRNXnxtPV2wi_3vJr2vbEunVB3NBmG2bERO7oFm1v2j3-XeaAeLYPVYpmBuLE0rKyAtEl1ghMXeAKo2-l9rIp3UklPrz7Q04ZEdSiH2qGD0KAPTZHCkCqi_SO9UMwR8XGM49SC2SOSEUVkQK4mUq-cqD2o8Lg2o0BWUGatLqp97849E1oj-tx421A-HbAE6w3nmwxY" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div>
-          <a href="manav.html" style="font-size: 2rem; font-weight: bold;">Manav &rarr;</a>
-          <p style="font-size: 1.2rem; font-weight: 600; margin-top: 0.2rem;">Cooking codes</p>
-        </div>
-      </div>
-
-      <!-- Amritanshu -->
-      <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
-        <div style="width: 120px; height: 120px; border-radius: 1rem; overflow: hidden; background: #ddd; flex-shrink: 0;">
-          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIYAyQcqZIoUk2bpQTjgO4AufcCTH2AdUDXG-BuvlDY8ZN7f4jRR81yVw1NRPuSPT6oER2lx5joxgCzlXAJUkZ2w8CtE9kvQhVvFwrg7LcwjGAFj6Urhh2RbMnYPYclnwSVw_R8FA6_iaU3j6gsQiNKC22Yna9B6-c-D898dC7YDQQueRBFNwen3oebTZF92Z3f5Kru_Q5Gkhbz4J-AooJKOOO9rYhHt3Jt1tsrsCvEsi100cFP_zvY3b_HhbPcqIogrmJxVP_8iRugwc" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div>
-          <a href="amritanshu.html" style="font-size: 2rem; font-weight: bold;">Amritanshu &rarr;</a>
-          <p style="font-size: 1.2rem; font-weight: 600; margin-top: 0.2rem;">Unbothered</p>
-        </div>
-      </div>
-
-    </div>
+  <h1>The Four Squad</h1>
+  <div class="grid">
+    <a href="amber.html" class="card">
+      <div class="avatar"><img src="amber.jpg" alt="Amber Pahwa"></div>
+      <h2>Amber Pahwa</h2>
+    </a>
+    <a href="manav.html" class="card">
+      <div class="avatar"><img src="manav.jpeg" alt="Manav"></div>
+      <h2>Manav</h2>
+    </a>
+    <a href="manik.html" class="card">
+      <div class="avatar"><img src="manik.jpeg" alt="Manik"></div>
+      <h2>Manik</h2>
+    </a>
+    <a href="amritanshu.html" class="card">
+      <div class="avatar"><img src="amritanshu.jpg" alt="Amritanshu"></div>
+      <h2>Amritanshu</h2>
+    </a>
   </div>
 </body>
 </html>
